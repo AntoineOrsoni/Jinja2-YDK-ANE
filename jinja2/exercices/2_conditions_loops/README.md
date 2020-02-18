@@ -15,6 +15,7 @@
     * use whitespace control to have the same indentation and spacing as the output below.
 * `run.py`
     * pass a name for policy_name_odd and another for policy_name_even.
+    * you don't need to pass a policy_number as it will be given inside the loop, in the template file.
     
 ## Example of expected outputs
 
@@ -60,9 +61,4 @@ interface Gi0/0/0.8
 interface Gi0/0/0.9
  no shut
  policy-map Altitude
-
-
-Process finished with exit code 0
-
-
 ```

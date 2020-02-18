@@ -11,17 +11,8 @@ template_env = jinja2.Environment(loader=template_loader)
 # Which file is my template
 template = template_env.get_template("template.tpl")
 
-# Loading my variables, stored in a YAML file
-with open("variables.yaml", 'r') as variables_file:
-    variables = yaml.safe_load(variables_file)
+# EXERCISE : Open the .yaml file. Load the variables, stored in a YAML file.
 
-    outputText = ""
-    # Generating the output for BundleEthernet interfaces
-    outputText += template.render(variables=variables)
+# EXERCISE : Construct your output with the render() method.
 
-print("output =\n {output}".format(output=outputText))
-
-# Saving the output in a text file
-# Content of the file gets removed every time. Then content is added.
-with open("./output/output.txt", "w") as output_file:
-    print(outputText, file=output_file)
+# EXERCISE : Saving the output in a text file. Open the `output.txt` file, and write your output inside.

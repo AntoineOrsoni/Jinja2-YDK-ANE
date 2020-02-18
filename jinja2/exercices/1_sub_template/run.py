@@ -8,12 +8,14 @@ template_loader = jinja2.FileSystemLoader(searchpath="./templates")
 template_env = jinja2.Environment(loader=template_loader)
 
 # Which file is my template
-template_include = template_env.get_template("parent_template_include.tpl")
-template_block = template_env.get_template("block/child_template_block.tpl")
+# EXERCISE : select the right template (child or parent ?) that will be used by Jinja2.
+template_include = template_env.get_template("EXERCISE")
+template_block = template_env.get_template("EXERCISE")
 
+# EXERCISE for **both** outputs, give a number for the interface and a name for the policy-map.
 # Output for include
-print("output **include** = \n{output}".format(output=template_include.render(number=1, name="Linkt-Altitude")))
+print("output **include** = \n{output}".format(output=template_include.render(EXERCISE)))
 
 print("\n\n")
 # Output for block
-print("output **block** = \n{output}".format(output=template_block.render(number=1, name="Linkt-Altitude")))
+print("output **block** = \n{output}".format(output=template_block.render(EXERCISE)))

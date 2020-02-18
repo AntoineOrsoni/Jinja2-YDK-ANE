@@ -11,4 +11,4 @@ template_env = jinja2.Environment(loader=template_loader)
 template = template_env.get_template("template.tpl")
 
 # Loading my variables, stored in a YAML file
-print("output = {output}".format(output=template.render(name="Antoine")))
+print("output = {output}".format(output=template.render(name="EXERCISE")))

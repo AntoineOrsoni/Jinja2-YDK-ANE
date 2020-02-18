@@ -11,5 +11,5 @@ template_env = jinja2.Environment(loader=template_loader)
 template = template_env.get_template("template.tpl")
 
 # Output
-print("output **include** = \n{output}".format(
+print("output = \n{output}".format(
     output=template.render(EXERCISE)))

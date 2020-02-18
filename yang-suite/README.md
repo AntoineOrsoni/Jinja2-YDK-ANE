@@ -1,7 +1,7 @@
 
 ## Yang-suite installation and use
 ### Installation
-To ensure you have the latest release of the YANG Suite Docker container, download the docker-compose.yml and dockerfile files from the YANG Suite wiki and run this command from a terminal or PowerShell window:
+Download the docker-compose.yml and dockerfile files and run this command from a terminal or PowerShell window:
 
 ```shell script
 docker-compose up

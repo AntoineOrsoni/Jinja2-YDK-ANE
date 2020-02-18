@@ -6,6 +6,7 @@
 
 * `run.py`
     * give your string to Jinja2, which will be inserted in the template.
+
 ## Example of expected outputs
 
 ```buildoutcfg

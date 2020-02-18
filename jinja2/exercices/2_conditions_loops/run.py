@@ -12,4 +12,4 @@ template = template_env.get_template("template.tpl")
 
 # Output
 print("output **include** = \n{output}".format(
-    output=template.render(name_linkt="Linkt", name_altitude="Altitude")))
+    output=template.render(EXERCISE)))

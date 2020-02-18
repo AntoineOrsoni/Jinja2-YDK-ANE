@@ -23,7 +23,8 @@ with open("variables.yaml", 'r') as variables_file:
 
     for i in range(total_subifs):
         name = variables[(total_subifs - i) % total_policy_maps]
-        outputText += template.render(name=name, number=i)
+        # number=i+1 so interface_number starts at 1 (not 0)
+        outputText += template.render(name=name, number=i+1)
 
 # Saving the output in a text file
 # Content of the file gets removed every time. Then content is added.

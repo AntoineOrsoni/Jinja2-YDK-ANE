@@ -1,6 +1,6 @@
 Exercices folder.
 
-## Exercices
+## Exercises
 
 ### Hello world
 

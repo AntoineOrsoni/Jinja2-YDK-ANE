@@ -25,7 +25,7 @@ More information about the installation in the ANX repo.
 - Connect to `http://localhost:9269`.
 - Use any equipment, such as the [DevNet Sandboxes](https://developer.cisco.com/site/sandbox/), or your own.
 
-## Exercices
+## Exercises
 
 We will first use [ncclient](https://github.com/ncclient/ncclient) to get the information we need from the device.
 We will then use [YDK](https://github.com/CiscoDevNet/ydk-py) to do the same ; and compare the two.

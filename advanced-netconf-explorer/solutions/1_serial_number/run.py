@@ -32,6 +32,7 @@ with manager.connect(host=xe_sandbox["host"], port=xe_sandbox["port"],
 
     # Showing the full xml output
     print("Response =\n{response}".format(response=response_xml.toprettyxml()))
+
     # print(type(m.get(payload))) => returns a <class 'ncclient.operations.retrieve.GetReply'>
     # print(type(m.get(payload).data_xml)) => returns a <class 'str'>
     # print(type(response_xml)) => returns <class 'xml.dom.minidom.Document'>
@@ -40,6 +41,7 @@ with manager.connect(host=xe_sandbox["host"], port=xe_sandbox["port"],
     # First, converting the xml as a dict
     response_dict = xmltodict.parse(response_xml.toxml())["data"]["device-hardware-data"]["device-hardware"]["device-inventory"]
 
+    # Printing each hw_type with its serial_number
     for element in range(response_dict.__len__()):
         for key, value in response_dict[element].items():
             if key == "hw-type":

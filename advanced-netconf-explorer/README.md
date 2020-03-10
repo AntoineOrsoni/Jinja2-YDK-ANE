@@ -2,13 +2,30 @@ This section has two folders :
 * `exercices` with the exercices and instructions,
 * `solutions` with example of solutions.
 
-## Exercices
+# Exercices
+
+## ncclient
 
 ### ncclient running config
 
 * getting the running config from the device using `ncclient`
     * Open a NETCONF session using `ncclient`,
     * Get the running-configuration (XML) from the device
+
+### ncclient serial numbers
+
+* Open a NETCONF session using `ncclient`,
+* Get the running-configuration (XML) from the device
+
+## YDK
+
+### Getting the IP address of the interfaces of a device
+
+* Connec to the device, via NETCONF, using YDK,
+* Getting the list of interfaces of a device,
+* Printing it nicely.
+
+# Documentation
 
 ## Available methods of ncclient manager
 
@@ -36,3 +53,17 @@ OPERATIONS = {
     "reboot_machine": operations.RebootMachine,
 }
 ```
+
+## YDK
+
+### YDK Github repo
+
+> https://github.com/CiscoDevNet/ydk-py
+
+### YDK documentation
+
+> http://ydk.cisco.com/py/docs/
+
+### Getting started
+
+> http://ydk.cisco.com/py/docs/guides/introduction.html

@@ -21,8 +21,14 @@ This section has two folders :
 
 ### Getting the IP address of the interfaces of a device
 
-* Connec to the device, via NETCONF, using YDK,
+* Connect to the device, via NETCONF, using YDK,
 * Getting the list of interfaces of a device,
+* Printing it nicely.
+
+### Getting the serial number of each component of a device
+
+* Connect to the device, via NETCONF, using YDK,
+* Getting the serial number of the device, for each component,
 * Printing it nicely.
 
 # Documentation

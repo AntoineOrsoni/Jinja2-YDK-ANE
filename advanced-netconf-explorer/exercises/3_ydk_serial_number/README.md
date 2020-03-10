@@ -1,9 +1,11 @@
 ## Objectives
-* Connec to the device, via NETCONF, using YDK,
+* Connect to the device, via NETCONF, using YDK,
 * Getting the serial number of the device, for each component,
 * Printing it nicely.
 
 ## Files that need to be edited
+
+This is your mission, meaning that this EXERCISE will not be much guided. Feel free to implement to solution how you want it.
 
 * `Dockerfile` is already complete. You do not need to edit it.
 * `./my-app/run.py`

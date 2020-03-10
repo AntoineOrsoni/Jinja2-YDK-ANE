@@ -39,6 +39,10 @@ This section has two folders :
 
 # Advanced NETCONF Explorer
 
+This section has two folders :
+* `exercices` with the exercices and instructions,
+* `solutions` with example of solutions.
+
 ## ncclient
 
 ### ncclient running config

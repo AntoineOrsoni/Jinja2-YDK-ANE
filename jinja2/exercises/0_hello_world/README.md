@@ -11,4 +11,3 @@
 
 ```buildoutcfg
 output = Hello world, I am Antoine !
-```

@@ -4,18 +4,9 @@ import xml.dom.minidom
 import lxml.etree as et
 import xmltodict
 
+# EXERCISE : use Advance Netconf Explorer to build your payload in order to get the serial-number.
 payload = """
-  <filter>
-    <device-hardware-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-device-hardware-oper">
-      <device-hardware>
-        <device-inventory>
-          <serial-number/>
-          <hw-type/>
-          <hw-dev-index/>
-        </device-inventory>
-      </device-hardware>
-    </device-hardware-data>
-  </filter>
+EXERCISE
 """
 
 # Getting the device information from the .yaml file
@@ -26,22 +17,22 @@ with open("devices.yaml", 'r') as devices:
 with manager.connect(host=xe_sandbox["host"], port=xe_sandbox["port"],
                      username=xe_sandbox["username"], password=xe_sandbox["password"], hostkey_verify=False) as m:
 
-    # getting the response. Converting to xml using the .data_xml attribute.
-    # Using the xml.dom.minidom library to pretty print the configuration
-    response_xml = xml.dom.minidom.parseString(m.get(payload).data_xml)
+    # EXERCISE : using `m`, get the response from the device
+    # Don't forget to send the payload as well.
 
-    # Showing the full xml output
-    print("Response =\n{response}".format(response=response_xml.toprettyxml()))
 
-    # print(type(m.get(payload))) => returns a <class 'ncclient.operations.retrieve.GetReply'>
-    # print(type(m.get(payload).data_xml)) => returns a <class 'str'>
-    # print(type(response_xml)) => returns <class 'xml.dom.minidom.Document'>
+    # EXERCISE : Print the output.
+    # You  can use the xml.dom.minidom.parseString(string) method to convert it to XML.
+    # It returns a <class 'xml.dom.minidom.Document'>
+    # You can then use the method .toprettyxml() on a <class 'xml.dom.minidom.Document'> to pretty print the XML output.
+
+
+
 
     # Just getting what we need
     # First, converting the xml as a dict
     response_dict = xmltodict.parse(response_xml.toxml())["data"]["device-hardware-data"]["device-hardware"]["device-inventory"]
 
-    print(dir(m))
     # Printing each hw_type with its serial_number
     for element in range(response_dict.__len__()):
         for key, value in response_dict[element].items():

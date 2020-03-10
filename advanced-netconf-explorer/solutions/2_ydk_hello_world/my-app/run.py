@@ -14,9 +14,8 @@ provider = NetconfServiceProvider(address=ios_xe.hostname,
 # create CRUD service
 crud = CRUDService()
 
-interfaces = xe_interface.Interfaces()
-interfaces = crud.read(provider, interfaces)
+interfaces_filter = xe_interface.Interfaces()
+interfaces = crud.read(provider, interfaces_filter)
 
-print(interfaces)
 for int_entry in range(interfaces.interface.__len__()):
     print("{int} has @IP : {ip}".format(int=interfaces.interface[int_entry].name, ip=interfaces.interface[int_entry].ipv4))

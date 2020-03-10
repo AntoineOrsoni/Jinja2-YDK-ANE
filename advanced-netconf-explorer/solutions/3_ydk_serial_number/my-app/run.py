@@ -18,5 +18,8 @@ hardware = xe_hardware.DeviceHardwareData.DeviceHardware()
 hardware = crud.read(provider, hardware)
 
 for hw_entry in range(hardware.device_inventory.__len__()):
-    print("{desc} a pour SN : {sn}\n".format(desc=hardware.device_inventory[hw_entry].hw_description, sn=hardware.device_inventory[hw_entry].serial_number))
+    if hardware.device_inventory[hw_entry].serial_number:
+        print("{desc} has the SN : {sn}.".format(desc=hardware.device_inventory[hw_entry].hw_description, sn=hardware.device_inventory[hw_entry].serial_number))
+    else:
+        print("{desc} does not have a SN.".format(desc=hardware.device_inventory[hw_entry].hw_description))
 

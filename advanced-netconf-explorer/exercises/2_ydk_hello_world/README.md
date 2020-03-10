@@ -23,6 +23,15 @@
 docker build -t 2_ydk_hello_world .
 docker run 2_ydk_hello_world 
 ```
+## Example of expected output
+
+```config
+GigabitEthernet1 has @IP : 10.10.20.48
+GigabitEthernet2 has @IP : None
+GigabitEthernet3 has @IP : None
+Loopback0 has @IP : 1.1.1.1
+Control Plane has @IP : None
+```
 
 # Documentation
 
@@ -39,13 +48,4 @@ docker run 2_ydk_hello_world
 > http://ydk.cisco.com/py/docs/guides/introduction.html
 
 
-## Example of expected output
-
-```config
-GigabitEthernet1 has @IP : 10.10.20.48
-GigabitEthernet2 has @IP : None
-GigabitEthernet3 has @IP : None
-Loopback0 has @IP : 1.1.1.1
-Control Plane has @IP : None
-```
 

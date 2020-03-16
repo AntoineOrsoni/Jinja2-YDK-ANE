@@ -90,6 +90,14 @@ This section has two folders :
 
 # Documentation
 
+## Jinja2
+
+> https://jinja.palletsprojects.com/en/2.11.x/
+
+## ncclient
+
+> https://github.com/ncclient/ncclient
+
 ## Available methods of ncclient manager
 
 Operations are defined [here](https://github.com/ncclient/ncclient/tree/master/ncclient/operations).
@@ -130,3 +138,7 @@ OPERATIONS = {
 ### Getting started
 
 > http://ydk.cisco.com/py/docs/guides/introduction.html
+
+## Advanced NETCONF Explorer
+
+> https://github.com/cisco-ie/anx
